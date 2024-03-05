@@ -7,7 +7,7 @@ DevOps_SE-206255 Project
 
 ### MEMBER (Please fill your name)
     642115501 Changseong Lee
-    Member2
+    652115521 YING ZHANG
     Member3
 
 
