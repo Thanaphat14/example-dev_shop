@@ -3,7 +3,7 @@
 DevOps_SE-206255 Project
 =
 ---
-## UPDATE : 2024.03.04
+## UPDATE : 2024.03.09
 
 ### MEMBER (Please fill your name)
     642115501 Changseong Lee
@@ -12,7 +12,7 @@ DevOps_SE-206255 Project
 
 
 ### SUMMARY
-    This is the DevOps project using Docker, Kanban chart, javascript and etc.
+    This is the DevOps project using Node js., Docker, Kanban chart, javascript and etc.
 
 
 
