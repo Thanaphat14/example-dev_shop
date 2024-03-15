@@ -1,6 +1,6 @@
 version: '3.3'
 services:
   frontend:
-    image: thanaphat14/se-project-234-2023-devops_shop:latest
+    image: dockerID/se-project-234-2023-devops_shop:latest
     ports:
       - "3000:80"
