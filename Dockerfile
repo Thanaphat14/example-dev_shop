@@ -1,8 +1,6 @@
-FROM ubuntu:latest
+FROM node:10-alpine as node
 
 ENTRYPOINT ["top", "-b"]
-
-FROM node:10-alpine as node
 
 WORKDIR /app
 
