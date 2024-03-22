@@ -7,8 +7,14 @@ DevOps_SE-206255 Project
 
 ### MEMBER (Please fill your name)
     642115501 Changseong Lee
+    652115515 Tao Hu
     652115521 YING ZHANG
     652115019 Thanaphat Sanngoen
+    652115515 Tao Hu
+ dev
+
+   
+ main
 
 
 ### SUMMARY
