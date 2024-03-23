@@ -3,7 +3,10 @@
 DevOps_SE-206255 Project
 =
 ---
-## UPDATE : 2024.03.09
+## UPDATE : 2024.03.23
+
+# GROUP NAME: DevOps_Shop
+
 
 ### MEMBER (Please fill your name)
     642115501 Changseong Lee
