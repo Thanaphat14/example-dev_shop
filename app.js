@@ -212,3 +212,67 @@ app.post('/addCategory', (req, res)=>{
         res.redirect('/denied')
     }
 })
+
+app.post('/market', (req, res)=>{
+    if(loginSTATUS){
+        db.query((`SELECT * FROM product`), (err, row)=>{
+            if(err) throw err;
+            db.query(`SELECT * FROM category`,(err, categories)=>{
+                if(err) throw err;
+                res.render('market',{ data: row , categoryList: categories });
+            })
+        })
+    }else{
+        res.redirect('/denied')
+    }
+})
+
+app.post('/addItem', (req, res)=>{
+    if(loginSTATUS){
+        const dateData = new Date();
+        let date = `${dateData.getFullYear()}. ${dateData.getMonth()+1}. ${dateData.getDate()}`
+        let itemName = req.body.itemName;
+        let category = req.body.itemCategory;
+        let detail = req.body.itemDetail;
+        let price = req.body.itemPrice;
+        let image = req.body.imageURL;
+        let promotion = req.body.promotion;
+
+        console.log(`'${date}', '${itemName}', '${category}', '${detail}', '${price}'`)
+
+        let add = `INSERT INTO product(date, product_category, product_name, product_description, product_sales_count, product_price, product_image, product_price_promotion)
+    VALUES ('${date}', '${category}', '${itemName}', '${detail}', 0 , '${price}', '${image}', '${promotion} ')`
+
+        db.query(add, (err, row)=>{
+            if(err) throw err;
+
+            console.log("ITEM IS ADDED.")
+
+        })
+
+        res.redirect('/market')
+    }else{
+        res.redirect('/denied')
+    }
+})
+
+app.post('/editItem', (req, res)=>{
+    if(loginSTATUS){
+        let sql = `SELECT * FROM category`
+        const data = req.body.editItem;
+
+        db.query(sql, (err, row)=>{
+            if(err) throw err;
+            let sqlFetch = `SELECT * FROM product WHERE product_id = ${data};`
+
+            db.query(sqlFetch, (err, OD)=>{
+                if(err) throw err;
+                console.log('DATA QUEUE  FOR REPLACEMENT: '+ OD[0].product_name)
+                res.render('./editItem.ejs', {category: row, readyData: OD});
+
+            })
+        })
+    }else{
+        res.redirect('/denied')
+    }
+})
