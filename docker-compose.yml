@@ -1,6 +1,6 @@
 version: '3.3'
 services:
-  frontend:
+  backoffice:
     image: spineplug81/234-project-devops_shop:latest
     ports:
-      - "8100:80"
+      - "8100"
