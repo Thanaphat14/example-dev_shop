@@ -1,5 +1,4 @@
 const express = require('express');
-const session = require('express-session')
 const bodyParser = require('body-parser');
 const db = require("./db");
 const {query} = require("express");
@@ -112,4 +111,67 @@ app.get('/editCategory',(req, res)=>{
 })
 
 
+// POST UNDER =======================================
+// POST UNDER =======================================
+// POST UNDER =======================================
+// POST UNDER =======================================
+// POST UNDER =======================================
 
+
+app.post('/centreLogin', (req, res)=>{
+
+    const username = req.body.username;
+    const password = req.body.password;
+
+    console.log(`INPUT ID: ${username}`);
+    console.log(`INPUT PW: ${password}`);
+
+    let loginSql = `SELECT * FROM user WHERE user_name  = '${username}'`
+
+    db.query(loginSql, (err, row)=>{
+
+        // if(err){
+        //     throw err;
+        // }
+
+        try{
+            if(row[0].user_name === username && row[0].user_password === password){
+                console.log("SEARCHED ID: "+ row[0].user_name)
+
+                loginSTATUS = true;
+                console.log("LOGIN SUCCESS :: STAUTS-200")
+                console.log("LOGIN STATUS: "+ loginSTATUS)
+                console.log("LOGIN UID: "+ row[0].uid)
+
+                res.render('home',{username: row[0].nickname, uid:row[0].uid});
+
+            }
+        } catch (err){
+            console.log("LOGIN FAILURE :: STAUTS-500")
+            console.log("LOGIN STATUS: "+ loginSTATUS)
+            // res.write(`<script>alert('INCORRECT username OR password')</script>`)
+            res.render('login');
+            // throw err;
+        }
+
+
+    })
+
+})
+
+app.post('/logOut',(req, res)=>{
+    loginSTATUS = false;
+    console.log("LOGIN STATUS: "+ loginSTATUS)
+    res.redirect('/centreLogin')
+
+})
+
+app.post('/seller', (req,res)=>{
+    let sqlInOrder = `SELECT * FROM product ORDER BY product_sales_count DESC`
+
+    db.query(sqlInOrder, (err, row)=>{
+        res.render('seller', {list : row})
+        console.log(`product id: ${row[0].product_id}`)
+        console.log(`product id: ${row[0].product_name}`)
+    })
+})
