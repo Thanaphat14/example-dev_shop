@@ -27,7 +27,24 @@ DevOps_SE-206255 Project
 - TASK3 [ ]
 - TASK4 [ ]
 - TASKn [ ]
-- 
+
+## MYSQL installation in VM
+
+    * You have to type ALTER USER line in terminal. DO NOT COPY AND PASTE    
+
+    $ sudo apt update
+    $ sudo apt-get update
+    
+    $ sudo apt install mysql-server
+    $ mysql --version
+    $ sudo mysql
+    $ logout
+    $ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY ‘password’;
+    $ mysql -u root -p
+    
+    enter password and check the database and create userDB Database.
+
+
 ## SQL CREATE DATABASE
 
     CREATE DATABASE userDB;
