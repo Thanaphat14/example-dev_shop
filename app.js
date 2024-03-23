@@ -130,10 +130,6 @@ app.post('/centreLogin', (req, res)=>{
 
     db.query(loginSql, (err, row)=>{
 
-        // if(err){
-        //     throw err;
-        // }
-
         try{
             if(row[0].user_name === username && row[0].user_password === password){
                 console.log("SEARCHED ID: "+ row[0].user_name)
