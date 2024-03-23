@@ -175,3 +175,15 @@ app.post('/seller', (req,res)=>{
         console.log(`product id: ${row[0].product_name}`)
     })
 })
+
+app.post('/category', (req, res)=>{
+    if(loginSTATUS){
+        db.query(`SELECT * FROM category`,(err, category)=>{
+            if(err) throw err;
+
+            res.render('category',{ categoryList: category });
+        })
+    }else{
+        res.redirect('/denied')
+    }
+})
