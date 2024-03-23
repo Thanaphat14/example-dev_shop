@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/profile.css"/>
+    <link rel="stylesheet" href="css/market.css"/>
+    <link rel="stylesheet" href="css/controlHome.css"/>
+</head>
+<body>
+
+<!--HOME _PAGE-->
+
+<!--NAV _BAR-->
+<nav class="homeTitle-min navColor nav-height" style="padding-top: 6px">
+    <div class="container-fluid">
+        <a class="homeTitle-mg navbar-brand navbarX hideNavText" href="/centreHome">SEASON GREEN</a>
+        <a style="font-weight: normal" class="homeTitle-mg navbar-brand navbarX hideNavText2 showText2" href="/centreHome">SEASON GREEN</a>
+    </div>
+
+
+    <div class="profilePst">
+        <div style="margin-right: 1%; margin-top: 8px; color: white">ADMIN</div>
+
+        <div style="margin-left: 10px" class="homeProfile" >
+            <div class="homeProfileInner" style="margin-top: 3px" >
+                <div class="homeIcon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <form action="/logOut" method="post">
+        <button class="logoutBtn">LOGOUT</button>
+    </form>
+
+</nav>
+<div class="hideNavText2 showHiddenBar">
+    <form action="/logOut" method="post">
+        <button class=" showHiddenBar" style="border:none; color: white;  background-color: rgb(116, 185, 70);">LOG OUT</button>
+    </form>
+</div>
+
+
+    <div class="row" style="position: relative; left: 12px">
+
+<!--       SIDE LIST-->
+        <div class="hideHomeTitle sideMenu sideMenuMIN col-xl-3 col-lg-3 col-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center">
+<!--&lt;!&ndash;            use id to append child add more category&ndash;&gt;-->
+<!--             <div id="homeCategory">-->
+<!--                 <button class="navBlock navBlock-lg">HOME</button>-->
+<!--                 <button class="navBlock navBlock-lg">CAT1</button>-->
+<!--             </div>-->
+            <div class="home-sub-title market-cat-lg market-cat-md market-sideTitle" style="text-align: left">
+                HOME
+            </div>
+            <div class="homeText-lg market-sideTitle2">
+                CONTROL
+                CENTER
+            </div>
+
+        </div>
+        <div class="hideNavText2 showHiddenBar">
+            <a class=" showHiddenBar" href="/centreHome">CONTROL CENTER</a>
+        </div>
+
+
+<!--            CONTROL PANEL-->
+        <div class="col-xl-9 col-lg-9 col-12 col-md-12 col-sm-12 col-xs-12" >
+            <div class="row" style="margin: 10%; height: 30vw; position: relative; right: 5px">
+
+                <div class="p1small col-lg-6 col-md-12">
+<!--                    To make apply css both form and button should be applied.-->
+                    <form action="/market" method="post" style="height: 95%">
+                        <button type="submit" class="systemPanel" name="market">
+                            MARKET
+                        </button>
+                    </form>
+                </div>
+
+
+                <div class="md-height p2small  col-lg-4  row col-md-12 ">
+                    <form class="col-lg-12 col-md-6 col-sm-6 col-6 hg-middleButtonHeight heightHund " action="/history" method="post" >
+                        <button type="submit" id="history" class="p2Xsmall systemPanel2" name="history">
+                            HISTORY
+                        </button>
+                    </form>
+                    <form class="col-lg-12 col-md-6 col-sm-6 col-6 hg-middleButtonHeight heightHund" action="/category" method="post">
+                        <button type="submit" class="p2Xsmall systemPanel3" name="category">
+                            CATEGORY
+                        </button>
+                    </form>
+                </div>
+
+
+                <div class=" heightHund  col-lg-2 col-md-12">
+                    <form class="systemPanel4 col-lg-12" action="/seller" method="post">
+                        <button type="submit" class="systemPanel4 col-lg-1 heightHund" style="background: #ec992c;" name="seller">
+                            SELLER
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</script>
+</body>
+</html>
