@@ -2,7 +2,7 @@ name: Deploy-dev
 'on':
   push:
     branches:
-      - dev
+      - feature
 jobs:
   docker:
     runs-on: ubuntu-latest
@@ -31,7 +31,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: dockerUserID/234-project-devops_shop:latest
+          tags: thanaphat14/234-project-devops_shop:latest
 
       - name: copy file via ssh password
         uses: appleboy/scp-action@v0.1.4
@@ -55,4 +55,5 @@ jobs:
             echo ${{secrets.DOCKER_HUB_TOKEN}} | docker login --username ${{secrets.DOCKER_HUB_USERNAME}} --password-stdin
             docker compose down
             docker compose pull
+            docker compose up -d
             rm -rf /home/ubuntu/se-project-234-2023-devops_shop
