@@ -5,6 +5,10 @@ DevOps_SE-206255 Project
 ---
 ## UPDATE : 2024.03.09
 
+# GROUP NAME: DevOps_Shop
+
+
+
 ### MEMBER (Please fill your name)
     642115501 Changseong Lee
     652115515 Tao Hu
