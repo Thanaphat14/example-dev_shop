@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extend:true}));
 app.use(express.static('public'));
 app.use(express.static("views"));
 
-const port = 3001;
+const port = 3000;
 
 let loginSTATUS = false;
 
@@ -323,4 +323,8 @@ app.post('/editCategory',(req, res)=>{
         console.log(`SELECTED DATA TO UPDATE: ${readyData}`)
         res.render('./editCategory.ejs', {data: readyData})
     }
+})
+
+app.listen(port, ()=>{
+    console.log("BackEnd Server is listening to PORT: "+port);
 })
