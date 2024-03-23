@@ -47,6 +47,25 @@ app.get('/centreHome', (req, res)=>{
     }
 })
 
+app.get('/category',(req, res)=>{
+    if(loginSTATUS){
+        db.query(`SELECT * FROM category`, (err, row)=>{
+            if(err) throw err;
+            res.render('category',{ categoryList: row });
+        })
+    }else{
+        res.redirect('/denied')
+    }
+})
+
+app.get('/addCategory',(req,res)=>{
+    if(loginSTATUS){
+        res.render('./addCategory.ejs')
+    }else{
+        res.redirect('/denied')
+    }
+})
+
 
 
 
