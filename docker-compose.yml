@@ -1,6 +1,6 @@
 version: '3.3'
 services:
   frontend:
-    image: dockerUsername/234-project-devops_shop:latest
+    image: spineplug81/234-project-devops_shop:latest
     ports:
       - "8100:80"
