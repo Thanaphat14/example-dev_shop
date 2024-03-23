@@ -30,7 +30,8 @@ DevOps_SE-206255 Project
 
 ## MYSQL installation in VM
 
-    * You have to type ALTER USER line in terminal. DO NOT COPY AND PASTE    
+    * You have to type ALTER USER line in terminal. DO NOT COPY AND PASTE 
+    * REMEMBER ANY INSTALLATION IS UNDER YOUR OWN RISK.
 
     $ sudo apt update
     $ sudo apt-get update
