@@ -276,3 +276,51 @@ app.post('/editItem', (req, res)=>{
         res.redirect('/denied')
     }
 })
+
+app.post('/history', (req, res)=>{
+    if(loginSTATUS){
+        const dateData = new Date();
+
+        let date = `${dateData.getFullYear()}. ${dateData.getMonth()+1}. ${dateData.getDate()}`
+        let sql = `SELECT * FROM history`
+
+        db.query(sql,(err, row)=>{
+            if(err) throw err;
+            res.render('./history.ejs', {historyData: row})
+        })
+    }else{
+        res.redirect('/denied')
+    }
+})
+
+app.post('/historyDetail',(req, res)=>{
+    if(loginSTATUS){
+        let selected = req.body.selectedHistory;
+        let selectSql = `SELECT * FROM history WHERE bill_id = ${selected}`
+
+
+        db.query(selectSql, (err, row)=>{
+
+            let selectProduct = `SELECT * FROM product WHERE product_id = ${row[0].bill_id}`
+
+            db.query(selectProduct, (err, product)=>{
+                if(err) throw err;
+
+                console.log(`THIS is for CHECKING PRODUCT COUNT: ${product[0].product_sales_count}`)
+                res.render('historyDetail', {selectedHistory: row, product: product})
+            })
+
+        })
+    }else{
+        res.redirect('/denied')
+    }
+})
+
+app.post('/editCategory',(req, res)=>{
+    if(loginSTATUS){
+        let readyData = req.body.categoryEdit;
+
+        console.log(`SELECTED DATA TO UPDATE: ${readyData}`)
+        res.render('./editCategory.ejs', {data: readyData})
+    }
+})
