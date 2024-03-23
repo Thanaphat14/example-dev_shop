@@ -89,5 +89,27 @@ app.get('/editItem', (req, res) => {
         res.redirect('/denied');
     }
 });
+app.get('/history',(req, res)=>{
+    if(loginSTATUS){
+        res.render('history',{CPdate: date});
+    }else{
+        res.redirect('/denied')
+    }
+})
+app.get('/historyDetail',(req,res)=>{
+    if(loginSTATUS){
+        res.render('./historyDetail.ejs')
+    }else{
+        res.redirect('/denied')
+    }
+})
+app.get('/editCategory',(req, res)=>{
+    if(loginSTATUS){
+        res.render('./editCategory.ejs' )
+    }else{
+        res.redirect('/denied')
+    }
+})
+
 
 
