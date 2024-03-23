@@ -36,7 +36,6 @@ user TABLE
     uid int auto_increment primary key,
     user_password varchar(20) not null,
     user_name varchar(30) not null,
-    isSeller boolean not null
     );
 
 category TABLE
@@ -75,8 +74,8 @@ other essential TABLE (please make a note above using the format under when new 
 
 user TABLE
 
-    INSERT INTO user(id, password, name, seller)
-    values('admin', 'admin0000', 'ADMIN', TRUE)
+    INSERT INTO user(id, password, name,)
+    values('admin', 'admin0000', 'ADMIN')
     ;
 
 category TABLE
