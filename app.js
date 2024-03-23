@@ -66,29 +66,41 @@ app.get('/addCategory',(req,res)=>{
     }
 })
 
-app.get('/market', (req, res) => {
-    if (loginSTATUS) {
-        res.render('./market.ejs');
-    } else {
-        res.redirect('/denied');
+app.get('/market',(req, res)=>{
+    if(loginSTATUS){
+        db.query((`SELECT * FROM product`), (err, row)=>{
+            if(err) throw err;
+            db.query(`SELECT * FROM category`,(err, categories)=>{
+                if(err) throw err;
+                res.render('market',{ data: row , categoryList: categories });
+            })
+        })
+    }else{
+        res.redirect('/denied')
     }
-});
+})
 
-app.get('/addItem', (req, res) => {
-    if (loginSTATUS) {
-        res.render('./addItem.ejs');
-    } else {
-        res.redirect('/denied');
-    }
-});
+app.get('/addItem',(req,res)=>{
+    if(loginSTATUS){
+        let sql = `SELECT * FROM category`
 
-app.get('/editItem', (req, res) => {
-    if (loginSTATUS) {
-        res.render('./editItem.ejs');
-    } else {
-        res.redirect('/denied');
+        db.query(sql, (err, row)=>{
+            if(err) throw err;
+            res.render('./addItem.ejs', {category: row});
+        })
+    }else{
+        res.redirect('/denied')
     }
-});
+})
+
+app.get('/editIem',(req,res)=>{
+    if(loginSTATUS){
+        res.render('./editItem.ejs')
+    }else{
+        res.redirect('/denied')
+    }
+})
+
 app.get('/history',(req, res)=>{
     if(loginSTATUS){
         res.render('history',{CPdate: date});
