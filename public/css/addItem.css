@@ -1,0 +1,603 @@
+
+@media  screen and (max-width: 3000px){
+
+    .promotionBox{
+        position: relative;
+        right: 50px;
+    }
+
+    .topContainer{
+        margin-top: 30px;
+    }
+
+    .outContainer{
+        padding-top: 3%;
+        padding-left: 3%;
+        height: 100%;
+        width: 100%;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .infoContainer{
+        height: 85vh;
+        width: 60vw;
+    }
+
+    .layout-adj{
+        margin-bottom: 1%;
+        display: flex;
+    }
+
+    .detail-box{
+        margin-left: 4.3%;
+        overflow: scroll;
+        height: 56vh;
+        width: 45vw;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .inputBox{
+        margin-left: 11%;
+        width: 20vw;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .option{
+        margin-left: 5vw;
+        width: 20vw;
+        position: relative;
+        right: 5px;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .imageInputBox{
+        position: relative;
+        right: 4px;
+    }
+
+    .sideText{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: normal;
+        border-bottom: solid 3px gray;
+        width: 100%
+    }
+
+    .pst1{
+        position: relative;
+        left: 52vw
+    }
+
+    .pst2{
+        position: relative;
+        left: 76%;
+        bottom: 42px
+    }
+}
+
+
+@media  screen and (max-width: 2200px){
+
+    .promotionBox{
+        position: relative;
+        right: 40px;
+    }
+
+    .topContainer{
+        margin-top: 30px;
+    }
+
+    .outContainer{
+        padding-top: 3%;
+        padding-left: 3%;
+        height: 100%;
+        width: 100%;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .infoContainer{
+        height: 85vh;
+        width: 60vw;
+    }
+
+    .layout-adj{
+        margin-bottom: 1%;
+        display: flex;
+    }
+
+    .detail-box{
+        margin-left: 4.3%;
+        overflow: scroll;
+        height: 56vh;
+        width: 45vw;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .inputBox{
+        margin-left: 12.8%;
+        width: 20vw;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .option{
+        margin-left: 6vw;
+        width: 20vw;
+        position: relative;
+        right: 12px;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .imageInputBox{
+        position: relative;
+        right: 4px;
+    }
+
+    .sideText{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: normal;
+        border-bottom: solid 3px gray;
+        width: 100%
+    }
+
+    .pst1{
+        position: relative;
+        left: 52vw
+    }
+
+    .pst2{
+        position: relative;
+        left: 76%;
+        bottom: 42px
+    }
+}
+
+@media  screen and (max-width: 1770px){
+
+    .promotionBox{
+        position: relative;
+        right: 50px;
+    }
+
+    .topContainer{
+        margin-top: 30px;
+    }
+
+    .outContainer{
+        padding-top: 3%;
+        padding-left: 3%;
+        height: 100%;
+        width: 100%;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .infoContainer{
+        height: 85vh;
+        width: 70vw;
+    }
+
+    .layout-adj{
+        margin-bottom: 1%;
+        display: flex;
+    }
+
+    .detail-box{
+        margin-left: 2.3%;
+        overflow: scroll;
+        height: 56vh;
+        width: 55vw;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .inputBox{
+        margin-left: 11%;
+        width: 20vw;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .option{
+        margin-left: 5vw;
+        width: 20vw;
+        position: relative;
+        right: 5px;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .imageInputBox{
+        position: relative;
+        right: 4px;
+    }
+
+    .sideText{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: normal;
+        border-bottom: solid 3px gray;
+        width: 100%
+    }
+
+
+    .pst1{
+        position: relative;
+        left: 59vw
+    }
+
+    .pst2{
+        position: relative;
+        left: 73%;
+        bottom: 42px
+    }
+}
+
+@media  screen and (max-width: 1500px){
+
+    .promotionBox{
+        position: relative;
+        right: 40px;
+    }
+
+    .topContainer{
+        margin-top: 30px;
+    }
+
+    .outContainer{
+        padding-top: 3%;
+        padding-left: 1%;
+        height: 100%;
+        width: 100%;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .infoContainer{
+        height: 85vh;
+        width: 70vw;
+    }
+
+    .layout-adj{
+        margin-bottom: 1%;
+        display: flex;
+    }
+
+    .detail-box{
+        margin-left: 0.3%;
+        overflow: scroll;
+        height: 56vh;
+        width: 80%;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .inputBox{
+        margin-left: 9%;
+        width: 20vw;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .option{
+        margin-left: 4vw;
+        width: 20vw;
+        position: relative;
+        right: 6px;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .imageInputBox{
+        position: relative;
+        right: 4px;
+    }
+
+    .sideText{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: normal;
+        border-bottom: solid 3px gray;
+        width: 100%
+    }
+
+
+    .pst1{
+        position: relative;
+        left: 55vw
+    }
+
+    .pst2{
+        position: relative;
+        left: 63%;
+        bottom: 42px
+    }
+}
+
+
+@media  screen and (max-width: 1080px){
+
+    .promotionBox{
+        position: relative;
+        right: 54px;
+    }
+
+    .topContainer{
+        margin-top: 30px;
+    }
+
+    .outContainer{
+        padding-top: 3%;
+        padding-left: 3%;
+        height: 100%;
+        width: 100%;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .infoContainer{
+        height: 85vh;
+        width: 70vw;
+    }
+
+    .layout-adj{
+        margin-bottom: 1%;
+        display: flex;
+    }
+
+    .detail-box{
+        margin-left: 4.3%;
+        overflow: scroll;
+        height: 56vh;
+        width: 45vw;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .inputBox{
+        margin-left: 18%;
+        width: 20vw;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .option{
+        margin-left: 9vw;
+        width: 20vw;
+        position: relative;
+        right: 8px;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .imageInputBox{
+        position: relative;
+        right: 4px;
+    }
+
+    .sideText{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: normal;
+        border-bottom: solid 3px gray;
+        width: 100%
+    }
+
+    .pst1{
+        position: relative;
+        left: 60%
+    }
+
+    .pst2{
+        position: relative;
+        left: 10vw;
+        bottom: 42px
+    }
+
+}
+
+@media  screen and (max-width: 988px){
+
+    .promotionBox{
+        position: relative;
+        right: 47px;
+    }
+
+    .topContainer{
+        margin-top: 30px;
+    }
+
+    .outContainer{
+        padding-top: 3%;
+        padding-left: 3%;
+        height: 100%;
+        width: 100%;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .infoContainer{
+        height: 85vh;
+        width: 100vw;
+    }
+
+    .layout-adj{
+        margin-bottom: 1%;
+        display: flex;
+    }
+
+    .detail-box{
+        margin-left: 2.3%;
+        overflow: scroll;
+        height: 56vh;
+        width: 80vw;
+        position: relative;
+        right: 50px;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .inputBox{
+        margin-left: 7%;
+        width: 70vw;
+        border: solid 2px rgba(105, 105, 105, 0.4);
+    }
+
+    .option{
+        margin-left: 4vw;
+        width: 70vw;
+        position: relative;
+        right: 13px;
+    }
+
+    .imageInputBox{
+        position: relative;
+        right: 4px;
+    }
+
+    .sideText{
+        padding-right: 4%;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: normal;
+        width: 100%;
+        border: none;
+    }
+
+    .pst1{
+        position: relative;
+        left: 55%
+    }
+
+    .pst2{
+        position: relative;
+        left: 30vw;
+        bottom: 42px
+    }
+
+}
+
+@media  screen and (max-width: 668px){
+    .promotionBox{
+        position: relative;
+        right: 40px;
+    }
+
+    .topContainer{
+        margin-top: 30px;
+    }
+
+    .outContainer{
+        padding-top: 3%;
+        padding-left: 3%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .infoContainer{
+        height: 85vh;
+        width: 100vw;
+    }
+
+    .layout-adj{
+        margin-bottom: 1%;
+        display: flex;
+    }
+
+    .detail-box{
+        margin-left: 2.3%;
+        overflow: scroll;
+        height: 56vh;
+        width: 80vw;
+        position: relative;
+        right: 50px;
+    }
+
+    .inputBox{
+        margin-left: 7%;
+        width: 70vw;
+    }
+
+    .option{
+        margin-left: 4vw;
+        width: 70vw;
+        position: relative;
+        right: 13px;
+    }
+
+    .imageInputBox{
+        position: relative;
+        right: 4px;
+    }
+
+    .sideText{
+        text-align: center;
+    }
+
+    .pst1{
+        position: relative;
+        left: 55%
+    }
+
+    .pst2{
+        position: relative;
+        left: 25vw;
+        bottom: 42px
+    }
+
+}
+
+@media  screen and (max-width: 600px){
+    .promotionBox{
+        position: relative;
+        right: 30px;
+    }
+
+    .topContainer{
+        margin-top: 30px;
+    }
+
+    .outContainer{
+        padding-top: 3%;
+        padding-left: 3%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .infoContainer{
+        height: 85vh;
+        width: 100vw;
+    }
+
+    .layout-adj{
+        margin-bottom: 1%;
+        display: flex;
+    }
+
+    .detail-box{
+        margin-left: 2.3%;
+        overflow: scroll;
+        height: 56vh;
+        width: 100vw;
+        position: relative;
+        right: 25px;
+    }
+
+    .inputBox{
+
+        width: 100vw;
+    }
+
+    .option{
+        margin-left: 4vw;
+        width: 70vw;
+        position: relative;
+        right: 13px;
+    }
+
+    .imageInputBox{
+        position: relative;
+        right: 4px;
+    }
+
+    .sideText{
+        text-align: center;
+    }
+
+    .pst1{
+        position: relative;
+        left: 55%
+    }
+
+    .pst2{
+        position: relative;
+        left: 19vw;
+        bottom: 42px
+    }
+}
