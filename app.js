@@ -176,6 +176,11 @@ app.post('/seller', (req,res)=>{
     })
 })
 
+
+app.post('/home', (req, res)=>{
+
+})
+
 app.post('/category', (req, res)=>{
     if(loginSTATUS){
         db.query(`SELECT * FROM category`,(err, category)=>{
