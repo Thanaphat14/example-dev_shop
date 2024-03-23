@@ -66,6 +66,28 @@ app.get('/addCategory',(req,res)=>{
     }
 })
 
+app.get('/market', (req, res) => {
+    if (loginSTATUS) {
+        res.render('./market.ejs');
+    } else {
+        res.redirect('/denied');
+    }
+});
 
+app.get('/addItem', (req, res) => {
+    if (loginSTATUS) {
+        res.render('./addItem.ejs');
+    } else {
+        res.redirect('/denied');
+    }
+});
+
+app.get('/editItem', (req, res) => {
+    if (loginSTATUS) {
+        res.render('./editItem.ejs');
+    } else {
+        res.redirect('/denied');
+    }
+});
 
 
