@@ -39,6 +39,14 @@ app.get('/seller',(req, res)=>{
     }
 })
 
+app.get('/centreHome', (req, res)=>{
+    if(loginSTATUS){
+        res.render('./home.ejs');
+    }else{
+        res.redirect('/denied')
+    }
+})
+
 
 
 
