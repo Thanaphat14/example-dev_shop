@@ -187,3 +187,23 @@ app.post('/category', (req, res)=>{
         res.redirect('/denied')
     }
 })
+
+app.post('/addCategory', (req, res)=>{
+    if(loginSTATUS){
+        let category = req.body.categoryName;
+        let sql = `INSERT INTO category(category_name) VALUES('${category}');`
+
+        db.query(sql,(err, categories)=>{
+            if(err) throw err;
+            console.log(`Added Category: ${category}`);
+
+            for(let i = 0; i < categories.length; i++){
+                console.log(`This is ${i+1} Item in Category Table: ${categories[i].category_name}`)
+            }
+
+        })
+        res.redirect('/category')
+    }else{
+        res.redirect('/denied')
+    }
+})
