@@ -17,3 +17,28 @@ const port = 3001;
 let loginSTATUS = false;
 
 let loginUID = 0;
+
+
+app.set('view engine', 'ejs');
+
+app.get('/denied', (req, res)=>{
+    res.render('notAuthorized.ejs')
+})
+
+app.get('/centreLogin', (req, res)=>{
+    // history.pushState(null, null, location.href);
+    // history.go(1)
+    res.render('./login.ejs');
+})
+
+app.get('/seller',(req, res)=>{
+    if(loginSTATUS){
+        res.render('./seller.ejs');
+    }else{
+        res.redirect('/denied')
+    }
+})
+
+
+
+
