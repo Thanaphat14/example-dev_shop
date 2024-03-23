@@ -23,6 +23,10 @@ DevOps_SE-206255 Project
 - TASK3 [ ]
 - TASK4 [ ]
 - TASKn [ ]
+- 
+## SQL CREATE DATABASE
+
+    CREATE DATABASE userDB;
 
 ## SQL CREATE TABLE
 
@@ -107,11 +111,9 @@ UPDATE "category" TABLE
 
 Please install npm under to run.
 
-    "axios"
     "body-parser"
     "ejs"
     "express"
-    "express-session"
     "mysql2"
     "nodemon"
 
