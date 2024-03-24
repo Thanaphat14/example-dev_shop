@@ -2,17 +2,9 @@ FROM node:14-alpine
 
 WORKDIR /app
 
-COPY package*.json .
+COPY package*.json ./
 
-RUN npm install
-
-RUN npm install express
-
-RUN npm install  body-parser
-
-RUN npm install mysql2
-
-RUN npm install ejs
+RUN npm install --only=prod
 
 COPY . .
 
