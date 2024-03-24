@@ -1,7 +1,7 @@
 let token ={
     host: "localhost",
     user: "root",
-    password: "password",
+    password: "Ff_0828953195",
     database: "userDB",
     port: "3306"
 }

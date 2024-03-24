@@ -16,8 +16,8 @@ services:
     environment:
       MYSQL_DATABASES: userDB
       MYSQL_USER: root
-      MYSQL_PASSWORD: password
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_PASSWORD: Ff_0828953195 
+      MYSQL_ROOT_PASSWORD: Ff_0828953195
     ports:
       - "3306:3306"
     volumes:
