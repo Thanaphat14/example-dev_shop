@@ -2,7 +2,7 @@ name: Deploy-dev
 'on':
   push:
     branches:
-      - dev
+      - main
 jobs:
   docker:
     runs-on: ubuntu-latest
@@ -31,7 +31,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: docker/234-project-devops_shop:latest
+          tags: thanaphat14/234-project-devops_shop:latest
 
       - name: copy file via ssh password
         uses: appleboy/scp-action@v0.1.4
@@ -40,7 +40,7 @@ jobs:
           username: ${{secrets.HOST_USER_NAME}}
           key: ${{secrets.HOST_SSH_PRIVATE_KEY}}
           port: 22
-          source: "docker-compose-dev.yml"
+          source: "docker-compose.yml"
           target: "/home/ubuntu/se-project-234-2023-devops_shop"
 
       - name: docker compose

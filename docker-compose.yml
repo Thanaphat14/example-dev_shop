@@ -3,9 +3,9 @@ services:
   node:
     build: .
     ports:
-      - "8100:8100"
+      - "8101:3000"
     expose:
-      - "8100"
+      - "3000"
     links:
       - mysql
     depends_on:

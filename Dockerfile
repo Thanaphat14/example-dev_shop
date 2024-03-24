@@ -16,6 +16,6 @@ RUN npm install ejs
 
 COPY . .
 
-EXPOSE 8100
+EXPOSE 3000
 
 CMD ["node", "app.js"]
