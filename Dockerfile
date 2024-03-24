@@ -1,11 +1,21 @@
-FROM node:10-alpine as node
+FROM node:14-alpine
+
 WORKDIR /app
-COPY package*json /app/
+
+COPY package*.json .
+
 RUN npm install
-COPY ./ /app/
-ARG TARGET=ng-deploy
-RUN npm run ${TARGET}
-FROM nginx:1.13
-COPY --from=node /app/dist/ /usr/share/nginx/html
-COPY ./nginx-custom.conf /etc/nginx/conf.d/default.conf
-EXPOSE 80
+
+RUN npm install express
+
+RUN npm install  body-parser
+
+RUN npm install mysql2
+
+RUN npm install ejs
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["node", "app.js"]
